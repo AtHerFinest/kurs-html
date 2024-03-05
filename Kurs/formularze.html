@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h4>Formularze:</h4>
+        <form action="login.php" method="post">
+            <fieldset>
+                <legend>Logowanie</legend>
+                <p>
+                    <label
+                        >Wpisz użytkownika:
+                        <input
+                            type="text"
+                            name="user_name"
+                            id="username"
+                            required
+                    /></label>
+                </p>
+                <p>
+                    <label for="password">Wpisz hasło:</label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        required
+                    />
+                </p>
+                <p>
+                    <button type="submit">Zaloguj</button>
+                    <button type="reset">Resetuj</button>
+                </p>
+            </fieldset>
+        </form>
+
+        <form
+            action="register.asp"
+            method="post"
+            enctype="multipart/form-data"
+        ></form>
+        <fieldset>
+            <legend>Rejestracja</legend>
+            <input type="hidden" value="HSDHASVDHV" name="hidden_value" />
+            <p>
+                <label
+                    >Wpisz użytkownika:
+                    <input
+                        type="text"
+                        name="user_name"
+                        id="username"
+                        required
+                        minlength="5"
+                        maxlength="30"
+                /></label>
+            </p>
+            <p>
+                <label
+                    >Wpisz e-mail:
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        required
+                        placeholder="Email"
+                /></label>
+            </p>
+            <p>
+                <label for="password">Wpisz hasło:</label>
+                <input type="password" name="password" id="password" required />
+            </p>
+            <p>
+                <label for="password2">Wpisz hasło ponownie:</label>
+                <input
+                    type="password2"
+                    name="password2"
+                    id="password2"
+                    min="14"
+                    max="140"
+                    required
+                />
+            </p>
+            <p>
+                <label for="age">Wiek:</label>
+                <input type="number" name="age" id="age" />
+            </p>
+            <label for="description">Opis użytkownika:</label>
+            <p>
+                <textarea
+                    name="description"
+                    id="description"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </p>
+            <p>
+                <label for="avatarimg">Wybierz awatar:</label>
+                <input
+                    type="file"
+                    name="avatar"
+                    id="avatarimg"
+                    accept="image/png, image/jpeg"
+                />
+            </p>
+            <p>
+                Ulubiony kolor: <br />
+                <input type="radio" name="color" value="red" id="red" />
+                <label for="red">Czerwony</label>
+                <input type="radio" name="color" value="green" id="green" />
+                <label for="green">Zielony</label>
+                <input type="radio" name="color" value="blue" id="blue" />
+                <label for="blue">Niebieski</label>
+            </p>
+            <p>
+                Ulubiona marka: <br />
+                <input type="checkbox" name="brand" value="Dodge" id="Dodge" />
+                <label for="Dodge">Dodge</label>
+                <input
+                    type="checkbox"
+                    name="brand"
+                    value="Pontiac"
+                    id="Pontiac"
+                />
+                <label for="Pontiac">Pontiac</label>
+                <input type="checkbox" name="brand" value="GMC" id="GMC" />
+                <label for="GMC">GMC</label>
+            </p>
+            <p>
+                <label for="datetime">Data zakupu auta:</label><br />
+                <input type="datetime-local" name="datetime" id="datetime" />
+            </p>
+            <label for="car-color">Kolor auta:</label>
+            <input type="color" name="car-color" id="car-color" />
+            <p>
+                <label for="tel">Telefon:</label><br />
+                <input type="tel" name="telephone" id="tel" />
+            </p>
+            <p>
+                <label for="distance">Przebieg w tyś. km:</label><br />
+                <input
+                    type="range"
+                    name="distance"
+                    id="distance"
+                    min="1"
+                    max="100"
+                    step="1"
+                />
+            </p>
+            <p>
+                <label for="distance">Strona akucji/komisu:</label><br />
+                <input type="url" name="urladdres" id="url" />
+            </p>
+
+            <p>
+                <label for="theme">Templatka forum:</label>
+                <select name="theme" id="theme">
+                    <option value="white">Biały</option>
+                    <option value="dark">Ciemny</option>
+                </select>
+            </p>
+        </fieldset>
+    </body>
+</html>

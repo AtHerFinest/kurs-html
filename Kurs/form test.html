@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <form action="new_article.php" method="post"></form>
+        <p>
+            <label for="title">Tytuł artykułu:</label>
+            <input type="text" name="title" id="title" />
+        </p>
+
+        <p>
+            <label for="content">Treść artykułu:</label>
+            <textarea name="content" id="" cols="50" rows="4"></textarea>
+        </p>
+        <p>
+            <label for="datetime-local">Data publikacji:</label>
+            <input
+                type="datetime-local"
+                name="publication-date"
+                id="publication-date"
+            />
+        </p>
+        <p>
+            Typ publikacji:<br />
+
+            <input type="radio" name="type" value="news" id="news" />
+            <label for="news">News</label>
+            <input type="radio" name="type" value="article" id="article" />
+            <label for="article">Artykuł</label>
+            <input type="radio" name="type" value="review" id="review" />
+            <label for="review">Recenzja</label>
+        </p>
+        <p>
+            Wybór: <br />
+            <input type="checkbox" name="tag" value="travels" id="travels" />
+            <label for="travels">Podróże</label>
+            <input
+                type="checkbox"
+                name="tag"
+                value="lifestyle"
+                id="lifestyle"
+            />
+            <label for="lifestyle">Lifestyle</label>
+        </p>
+        <p>
+            <label for="category">Kategoria</label>
+            <select name="category" id="category">
+                <option value="category1">Kategoria1</option>
+                <option value="category2">Kategoria2</option>
+            </select>
+        </p>
+        <p>
+            <button type="submit">Wyślij</button>
+            <button type="reset">Resetuj</button>
+        </p>
+    </body>
+</html>
