@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .red-link {
+        background: red;
+      }
+      [data-link] {
+        background: green;
+      }
+      [class*="bold"] {
+        font-weight: bold;
+      }
+      [class*="small"] {
+        font-size: 10px;
+      }
+      [class^="red"] {
+        font-size: 26px;
+      }
+      [class$="italic"] {
+        font-style: italic;
+      }
+      [class|="ORANGE"] {
+        border: 4px orange dotted;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li class="red-link"><a href="home.html">Home</a></li>
+      <li data-link="bold-link" class="ORANGE">
+        <a href="about.html">About</a>
+      </li>
+      <li class="small-text bold italic">
+        <a href="tos.html">Tos</a>
+      </li>
+    </ul>
+  </body>
+</html>
