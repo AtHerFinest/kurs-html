@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      [data-color] {
+        background-color: red;
+        border: 2px;
+        font-weight: bold;
+      }
+
+      [data-color="blue"] {
+        background-color: lightskyblue;
+        border: 2px solid darkblue;
+      }
+      [data-green="light"i] {
+        background-color: lightgreen;
+      }
+      [data-green="dark" i] {
+        background-color: green;
+      }
+
+      [class*="str"] {
+        background-color: orange;
+      }
+
+      [class~="small-text"] {
+        font-size: 10px;
+      }
+
+      [class^="small-text"] {
+        border: 15px solid darkorange;
+      }
+
+      [class$="box"] {
+        padding: 5px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div data-color="">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus maiores
+      voluptatem iusto impedit voluptates distinctio culpa, voluptatibus ratione
+      est illo rem beatae delectus officiis omnis explicabo ea, in temporibus
+      quis!
+    </div>
+    <div class="small-text str box">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus maiores
+      voluptatem iusto impedit voluptates distinctio culpa, voluptatibus ratione
+      est illo rem beatae delectus officiis omnis explicabo ea, in temporibus
+      quis!
+    </div>
+    <div data-green="light">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus maiores
+      voluptatem iusto impedit voluptates distinctio culpa, voluptatibus ratione
+      est illo rem beatae delectus officiis omnis explicabo ea, in temporibus
+      quis!
+    </div>
+    <p data-color="blue">Lorem ipsum dolor sit amet.</p>
+  </body>
+</html>
