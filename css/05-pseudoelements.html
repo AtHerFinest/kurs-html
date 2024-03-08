@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p::first-letter {
+        font-size: 20px;
+        color: darkgray;
+      }
+      p::first-line {
+        font-weight: bold;
+      }
+      p::selection {
+        color: red;
+      }
+      ul {
+        list-style-type: none;
+      }
+      li::before {
+        content: "→ ";
+      }
+      .best::before {
+        content: " 🐶";
+      }
+      li::after {
+        content: "!";
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet consectetur
+      adipisicing elit. Nesciunt deleniti obcaecati blanditiis maxime iure
+      molestiae harum, minima non debitis excepturi!
+    </p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <p>Lorem ipsum dolor sit amet.</p>
+    <ul>
+      <li>jeden</li>
+      <li class="best">dwa</li>
+      <li>trzy</li>
+    </ul>
+  </body>
+</html>
