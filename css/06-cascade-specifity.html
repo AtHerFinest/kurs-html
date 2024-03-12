@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body article h1.heading {
+        color: green;
+        font-weight: normal;
+      }
+      h1 {
+        color: lightblue;
+      }
+      #headelement {
+        color: blue;
+      }
+      article #headelement {
+        color: brown;
+      }
+      body article h1 {
+        color: red;
+        text-decoration: underline;
+      }
+      h1[class] {
+        text-decoration: underline;
+      }
+      h1.heading {
+        text-decoration: line-through;
+      }
+    </style>
+  </head>
+  <body>
+    <article>
+      <h1 id="headelement" class="heading">Nagłówek</h1>
+      <p>Lorem ipsum dolor sit.</p>
+      <p>Lorem ipsum dolor sit.</p>
+      <section>
+        <article><p>Lorem ipsum dolor sit.</p></article>
+      </section>
+    </article>
+  </body>
+</html>
