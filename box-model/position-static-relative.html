@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        position: static;
+        left: 100px; /* ignorowane */
+      }
+      .box {
+        position: relative;
+        bottom: 80px;
+        left: 150px;
+        height: 200px;
+        width: 100px;
+        background: lightcyan;
+        border: 2px solid black;
+        z-index: 2;
+      }
+      .box2 {
+        background-color: rgb(179, 125, 125);
+
+        bottom: 150px;
+        left: 5%;
+        border: 2px solid orange;
+        z-index: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+    <div class="box">
+      div<br />
+      div
+    </div>
+    <div class="box box2">
+      div2<br />
+      div2
+    </div>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+    <p>
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam, vel.
+    </p>
+  </body>
+</html>
