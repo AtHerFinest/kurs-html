@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+      * {
+        margin: 20px 2px;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        column-gap: 20px;
+        height: 160px;
+        border: 2px solid red;
+      }
+      .container div {
+        margin: 5px;
+        width: 50px;
+        height: 50px;
+        flex-grow: 1;
+        background: green;
+        text-align: center;
+        line-height: 50px;
+      }
+      div.h100 {
+        height: 100px;
+        background: orange;
+      }
+      div.h120 {
+        height: 100px;
+        background: red;
+      }
+      .first {
+        order: 1;
+      }
+      .second {
+        order: 2;
+      }
+      .third {
+        order: 3;
+      }
+      div.first {
+        flex-grow: 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="third">1</div>
+      <div class="second">2</div>
+      <div class="first">3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="h100">1</div>
+      <div class="h120">2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>1</div>
+      <div>2</div>
+    </div>
+  </body>
+</html>

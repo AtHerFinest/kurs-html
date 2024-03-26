@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: black;
+        color: white;
+      }
+      body {
+        font-size: 3.2rem;
+        background-color: silver;
+        color: black;
+      }
+      #breakpoint-info::after {
+        content: "breakpoint do 576px";
+      }
+
+      @media (min-width: 576px) {
+        body {
+          background-color: lightgreen;
+        }
+        #breakpoint-info::after {
+          content: "breakpoint od 576px np telefony itd";
+        }
+      }
+      @media (min-width: 768px) {
+        body {
+          background-color: rgb(255, 238, 0);
+        }
+        #breakpoint-info::after {
+          content: "breakpoint od 768px np większe telefony itd";
+        }
+      }
+      @media (min-width: 992px) {
+        body {
+          background-color: rgb(0, 153, 255);
+        }
+        #breakpoint-info::after {
+          content: "breakpoint od 992px np tablety itd";
+        }
+      }
+      @media (min-width: 1200px) {
+        body {
+          background-color: rgb(255, 0, 85);
+        }
+        #breakpoint-info::after {
+          content: "breakpoint od 1200px np laptopy itd";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <span id="breakpoint-info"></span>
+  </body>
+</html>

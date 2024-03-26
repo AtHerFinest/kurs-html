@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkslategray;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: #f0f0f0;
+      }
+      header,
+      main,
+      footer {
+        width: 80%;
+        padding: 20px;
+        margin: 10px 0px;
+        background-color: white;
+      }
+      header h1 {
+        text-align: center;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 10px;
+      }
+      .gallery img {
+        flex: 1 0 30%;
+        max-width: 30%;
+        height: auto;
+      }
+      footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Galeria zdjęć</h1>
+      </header>
+      <main>
+        <div class="gallery">
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+            alt=""
+          />
+          <img
+            src="https://cdn.pixabay.com/photo/2024/03/07/10/38/simba-8618301_960_720.jpg"
+            alt=""
+          />
+        </div>
+      </main>
+      <footer>
+        <p>Moja galeria, 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>

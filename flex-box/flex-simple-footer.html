@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: darkslategray;
+      }
+
+      .footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 20px;
+        background-color: #333;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .footer-columns {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1200px;
+        margin-bottom: 20px;
+      }
+      .footer-section {
+        display: flex;
+        flex-direction: column;
+      }
+      .footer-title {
+        border-bottom: 2px solid red;
+        margin-bottom: 10px;
+      }
+      .footer-section a,
+      .footer-section p {
+        color: white;
+        text-decoration: none;
+        margin-bottom: 5px;
+      }
+      .footer-socials img {
+        width: 24px;
+        height: 24px;
+      }
+      .footer-socials {
+        display: flex;
+        justify-content: center;
+        gap: 14px;
+      }
+      .footer-section a:hover {
+        color: #007bff;
+      }
+    </style>
+  </head>
+  <body>
+    <footer class="footer">
+      <div class="footer-columns">
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <a href="#">Homepage</a>
+          <a href="#">About Us</a>
+          <a href="#">FAQ</a>
+          <a href="#">TOS</a>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Company</h4>
+          <a href="#">Help</a>
+          <a href="#">Affiliates</a>
+          <a href="#">FAQ</a>
+          <a href="#">Shipping info</a>
+        </div>
+        <div class="footer-section">
+          <h4 class="footer-title">Address</h4>
+          <p>Ulica 123</p>
+          <p>00-000 Miasto</p>
+          <p>Poland</p>
+        </div>
+      </div>
+      <div class="footer-socials">
+        <a href="#">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/08/01/21/00/icon-1562136_960_720.png"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cdn.pixabay.com/photo/2015/05/17/10/51/facebook-770688_1280.png"
+            alt=""
+          />
+        </a>
+        <a href="#">
+          <img
+            src="https://cdn.pixabay.com/photo/2016/07/03/18/36/youtube-1495277_1280.png"
+            alt=""
+          />
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>
