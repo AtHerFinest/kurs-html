@@ -1,0 +1,54 @@
+:root {
+  box-sizing: border-box;
+  color: white;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url("https://cdn.pixabay.com/photo/2017/04/05/01/20/wood-2203740_1280.jpg");
+}
+#header {
+  background: black;
+  padding: 5px;
+  font-family: "Cookie";
+  display: flex;
+  justify-content: space-between;
+  -webkit-box-shadow: 1px 7px 15px -1px rgb(0, 0, 0);
+  -moz-box-shadow: 1px 7px 15px -1px rgb(0, 0, 0);
+  box-shadow: 1px 7px 15px -1px rgb(0, 0, 0);
+}
+#logo img {
+  margin: 20px;
+  width: 60px;
+}
+
+.menu {
+  flex: 0 0 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.menu ul li {
+  display: inline-block;
+  padding-right: 20px;
+}
+
+.menu ul li a {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+}
+.menu ul li a:hover {
+  color: #ffd77f;
+}
+.contact-info {
+  flex: 0 0 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
