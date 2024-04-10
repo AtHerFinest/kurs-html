@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let i = 0;
+      while (i < 4) {
+        console.log(i);
+        i = i + 1;
+      }
+
+      i = 10;
+      while (i < 15) {
+        console.log(i);
+        i++; // inkrementacja
+      }
+      i = 20;
+      while (i > 15) {
+        console.log(i);
+        i--; // dekrementacja
+      }
+
+      const names = ["Kasia", "Ola", "Adam", "Karol"];
+      let b = 0;
+      while (b < names.length) {
+        console.log(names[b]);
+        b++;
+      }
+      const nums = [10, 2, 3, 4, 5];
+      let c = 0;
+      while (c < nums.length) {
+        nums[c] = nums[c] + 10;
+        c++;
+      }
+      console.log(nums);
+      let d = 10;
+      do {
+        console.log("d:", d);
+        d++;
+      } while (d < 5);
+    </script>
+  </body>
+</html>
