@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 10;
+      let b = a; // 10 jest skopiowane do zmiennej b
+      b++;
+      console.log("a:", a); // 10
+      console.log("b:", b); // 11
+
+      let obj = { a: 10 };
+      let data = obj; // data i obj wskazują na to samo miejsce w pamięci
+      // do data została przekazana referencja do obiektu obj
+      obj.a++;
+      console.log("obj.a:", obj.a); // 11
+      console.log("data.a:", data.a); // 11
+
+      if (obj == data) {
+        // czy obj wskazuje na to samo miejsce w pamieci co data
+        console.log("wskazują na to samo miejsce w pamięci");
+      } else {
+        console.log("nie wskazują na to samo miejsce w pamięci");
+      }
+
+      let info = { a: 12, b: 15 };
+      if (obj == info) {
+        // czy obj wskazuje na to samo miejsce w pamieci co data
+        console.log("wskazują na to samo miejsce w pamięci");
+      } else {
+        console.log("nie wskazują na to samo miejsce w pamięci");
+      }
+    </script>
+  </body>
+</html>
