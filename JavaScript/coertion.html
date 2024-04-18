@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //konwersjer jawne
+      let txt = String(123);
+      console.log(typeof txt); // string
+
+      let num = parseInt("543378");
+      console.log(typeof num); // number
+
+      let num2 = parseFloat("1234556.232332");
+      console.log(typeof num2);
+
+      // konwersje niejawne - koercje
+
+      let data = "txt" + 123;
+      console.log(data); // txt123
+
+      // "102" == 12
+      let info = "10";
+      console.log(info + 2); // "102"
+      if (info + 2 == 12) {
+        console.log("!");
+      }
+
+      let d = +"100";
+      console.log(typeof d); // "number"
+
+      d = -"100";
+      console.log(typeof d); // "number"
+      console.log(d); // -100
+
+      if ("false") console.log("wykona się");
+      if (" ") console.log("wykona się");
+      if ("") console.log(" nie wykona się"); // nie wykona się
+    </script>
+  </body>
+</html>

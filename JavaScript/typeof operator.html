@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            typeof operator - operator zwracający
+            typ wartości w zmiennej lub stałej. 
+            Typ określony jest jako łańcuch znaków
+        */
+
+      console.log(typeof 20); // "number"
+      console.log(typeof "str"); // "string"
+      console.log(typeof "56"); // "string"
+      console.log(typeof true); // "boolean"
+      console.log(typeof {}); // "object"
+      console.log(typeof { a: "str" }); // "object"
+      console.log(typeof [1, 2, 3, 4]); // "object"
+      console.log(typeof undefined); // "undefined"
+      console.log(typeof 123234234n); // "bigint"
+      console.log(typeof Symbol()); // "symbol"
+      console.log(typeof console.log); // "function"
+      console.log(typeof null); // "object"
+
+      let data = { name: "Kasia" };
+
+      if (typeof data === "number") {
+        console.log(data, "jest liczbą");
+      } else if (typeof data === "string") {
+        console.log(data, "jest łańcuchem znaków");
+      } else if (typeof data === "object") {
+        console.log(data, "jest obiektem");
+      }
+    </script>
+  </body>
+</html>
