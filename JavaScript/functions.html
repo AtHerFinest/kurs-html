@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // deklaracja funkcji
+      // a,b,c,d to parametry
+
+      function test(a, b, c, d) {
+        let sum = a + b + c + d;
+        return sum;
+      }
+
+      // wywołanie funkcji
+      // 1,2,3,4 to argumenty
+      let result = test(1, 2, 3, 4);
+      console.log(result); // 10
+
+      /*
+            return pozwala na wyjście z funkcji oraz zwrócenie 
+            z niej wartości
+        */
+
+      function substract(a, b) {
+        let result = a - b;
+        return result;
+      }
+
+      let data = substract(100, 45);
+      console.log(data); // 55
+
+      function foo(name) {
+        if (name === "Kasia") {
+          return; // przerywamy działanie funkcji
+        } else {
+          console.log("Imię to:", name);
+        }
+
+        return null;
+      }
+
+      console.log(foo("Zosia"));
+      console.log(foo("Kasia"));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createTv(brand, screenSize, color) {
+        if (color != "white" && color != "black" && color != "silver") {
+          return null;
+        }
+        return {
+          brand: brand,
+          screenSize: screenSize,
+          color: color,
+        };
+      }
+
+      const tv1 = createTv("Samsung", "2560px", "white");
+      console.log(tv1);
+      const tv2 = createTv("Phillips", "1030px", "black");
+      console.log(tv2);
+      const tv3 = createTv("LG", "1000px", "silver");
+      console.log(tv3);
+      const tv4 = createTv("LG", "1000px", "red");
+      console.log(tv4);
+    </script>
+  </body>
+</html>

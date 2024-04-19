@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function hireEmployee(name, surname, email, age, profession) {
+        if (name.length < 3) return null;
+        if (surname.length < 3) return null;
+        if (email.length < 3) return null;
+        if (age < 18) return null;
+        if (profession.length < 3) return null;
+
+        if (
+          profession != "programmer" &&
+          profession != "admin" &&
+          profession != "manager"
+        ) {
+          return null;
+        }
+
+        const obj = {
+          company: "Example Ltd.",
+          name: name,
+          surname: surname,
+          email: email,
+          age: age,
+          profession: profession,
+        };
+
+        return obj;
+      }
+
+      const employee1 = hireEmployee(
+        "Kasia",
+        "Kowalska",
+        "kasia@example.com",
+        32,
+        "programmer"
+      );
+      console.log(employee1);
+
+      const employee2 = hireEmployee(
+        "O",
+        "Kowalska",
+        "oasia@example.com",
+        32,
+        "programmer"
+      );
+      console.log(employee2);
+    </script>
+  </body>
+</html>
