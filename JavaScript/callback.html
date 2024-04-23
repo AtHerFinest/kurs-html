@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   function show(txt) {
+      //     console.log(txt);
+      //   }
+
+      //   function showArr(arr, callback) {
+      //     for (let i = 0; i < arr.length; i++) {
+      //       const num = arr[i];
+      //       callback(num);
+      //     }
+      //   }
+
+      //   const tab = [1, 2, 3, 4, 5];
+      //   showArr(tab, show);
+
+      function greaterThan6(arr, callback) {
+        for (i = 0; i < arr.length; i++) {
+          if (arr[i] > 6) callback(arr[i]);
+        }
+      }
+
+      function msg(a) {
+        console.log(a);
+      }
+
+      const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
+      greaterThan6(arr, msg);
+      greaterThan6(arr, function (data) {
+        console.log("Data:", data);
+      });
+    </script>
+  </body>
+</html>
