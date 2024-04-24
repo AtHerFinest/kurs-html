@@ -1,0 +1,70 @@
+.nav {
+  width: 1600px;
+  height: 80px;
+  gap: 0px;
+  opacity: 0px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.logo {
+  display: flex;
+  width: 145px;
+  height: 31px;
+  top: 24px;
+  left: 215px;
+
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30.52px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #2196f3;
+}
+.studio {
+  width: 145px;
+  height: 31px;
+  top: 24px;
+  left: 215px;
+  gap: 0px;
+  opacity: 0px;
+  font-family: Raleway;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30.52px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: black;
+}
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  gap: 46px;
+  margin-right: 900px;
+}
+
+li {
+  display: flex;
+  justify-content: center;
+}
+
+a .agent {
+  color: #2196f3;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+}
+
+ul li a {
+  text-decoration: none;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16.41px;
+  letter-spacing: 0.02em;
+}
