@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createEmployee(
+        name = "unknown",
+        surname = "unknown",
+        email = "unknown@example.com"
+      ) {
+        return {
+          name: name,
+          surname: surname,
+          email: email,
+        };
+      }
+      console.log(createEmployee());
+      console.log(createEmployee("Ola"));
+      console.log(createEmployee("Ola", "Kowalska"));
+      console.log(createEmployee("Ola", "Kowalska", "ola@example.com"));
+    </script>
+  </body>
+</html>

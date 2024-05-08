@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function outerFunction() {
+        let outerVar = "Jestem zewnętrzną zmienną";
+
+        function innerFunction() {
+          let innerVar = "Jestem wewnętrzną zmienną";
+          return `${outerVar}. ${innerVar}`;
+        }
+
+        return innerFunction();
+      }
+
+      console.log(outerFunction()); // "Jestem zewnętrzną zmienną. Jestem wewnętrzną zmienną"
+    </script>
+  </body>
+</html>
