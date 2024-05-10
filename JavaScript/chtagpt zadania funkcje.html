@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // ZAD 1
+      function calculateSum(a, b) {
+        return a + b;
+      }
+      console.log(calculateSum(1, 2));
+
+      //   ZAD 2
+
+      function checkAge(a) {
+        if (a >= 18) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      console.log(checkAge(20));
+      console.log(checkAge(50));
+      console.log(checkAge(10));
+      console.log(checkAge(18));
+      console.log(checkAge(5));
+
+      // zad 3
+
+      function greet(name) {
+        return "Cześć, " + name + "!";
+      }
+      console.log(greet("Kasia"));
+
+      // zad 4
+
+      function calculateCircleArea(r) {
+        let pi = 3.14159;
+        let r2 = Math.pow(r, 2);
+        let circle = pi * r2;
+        return circle;
+      }
+
+      console.log(calculateCircleArea(3));
+
+      // zad 5
+
+      function convertCelsiusToFahrenheit(c) {
+        let fahren = (c * 9) / 5 + 32;
+        return fahren;
+      }
+      console.log(convertCelsiusToFahrenheit(20));
+
+      // zad zaawansowane 1
+
+      function generateRandomColor() {
+        let colors = [];
+        for (let i = 0; i < 3; i++) {
+          let colorComponent = Math.floor(Math.random() * 256);
+          colors.push(colorComponent);
+        }
+        return "rgb(" + colors.join(", ") + ")";
+      }
+
+      console.log(generateRandomColor());
+
+      // to samo zad ale bez metod
+
+      function generateRandomColor() {
+        let red = Math.floor(Math.random() * 256);
+        let green = Math.floor(Math.random() * 256);
+        let blue = Math.floor(Math.random() * 256);
+
+        let color = "rgb(" + red + ", " + green + ", " + blue + ")";
+        return color;
+      }
+
+      console.log(generateRandomColor());
+
+      // zad 1 z latwiejszych
+
+      function absoluteValue(a) {
+        if (a < 0) {
+          let b = a * -1;
+          return "Wartość bezwzględna liczby " + a + " wynosi " + b;
+        } else {
+          return "Wartość bezwzględna liczby " + a + " wynosi " + a;
+        }
+      }
+      console.log(absoluteValue(5));
+      console.log(absoluteValue(-5));
+
+      // zad 2 z latwiejszych
+
+      function isEven(a) {
+        if (a % 2 === 0) {
+          return "liczba " + a + " jest parzysta";
+        } else {
+          return "liczba " + a + " jest nieparzysta";
+        }
+      }
+      console.log(isEven(5));
+      console.log(isEven(10));
+      console.log(isEven(25));
+      console.log(isEven(16));
+
+      // zad 3 z latwiejszych
+
+      function maxNumber(a, b) {
+        if (a > b) {
+          return a + " jest większe od " + b;
+        } else if (b > a) {
+          return b + " jest większe od " + a;
+        } else if ((a = b)) {
+          return b + " i " + a + " są równe";
+        }
+      }
+      console.log(maxNumber(5, 10));
+      console.log(maxNumber(5, 5));
+      console.log(maxNumber(60, 10));
+    </script>
+  </body>
+</html>

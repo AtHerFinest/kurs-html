@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function createComputer(cpu, gpu, ram, dysk) {
+        return {
+          cpu: cpu,
+          gpu: gpu,
+          ram: ram,
+          dysk: dysk,
+        };
+      }
+
+      let computer = createComputer("amd", "nvidia", "32gb", "1tb");
+      console.log(computer);
+
+      function createLaptop(obj) {
+        return {
+          ...obj,
+          type: "laptop",
+          weight: 2.5,
+        };
+      }
+
+      let laptop = createLaptop(computer);
+      console.log(laptop);
+    </script>
+  </body>
+</html>

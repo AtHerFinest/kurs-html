@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            Spread operator z EcmaScript2015 rozbija 
+            tablicę/obiekt na pojedyńcze wartości
+        */
+
+      function test(a, b, c, d) {
+        console.log(a, b, c, d);
+      }
+
+      const arr = [1, 2, 3, 4];
+
+      test(...arr); // spread operator
+
+      let data = {
+        name: "Kasia",
+        city: "Wawa",
+        favColor: "red",
+      };
+
+      let obj = {
+        ...data,
+        email: "kasia@example.com",
+        country: "Poland",
+        city: "Krk",
+      };
+
+      console.log(obj);
+    </script>
+  </body>
+</html>

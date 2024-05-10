@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /*
+            Spread operator - zadanie
+            1. Stwórz funkcję createComputer, która
+               zwróci obiekt na bazie przekazanych
+               argumentów:
+               - cpu o wartości amd
+               - gpu o wartości nvidia
+               - ram jako 32gb
+               - dysk 1tb
+            2. Napisz drugą funkcję createLaptop która 
+               przyjmie obiekt komputera i zwróci 
+               nowy obiekt składający się z:
+               - właściwości przekazanego obiektu
+               - nowej właściwości type jako "laptop"
+               - weight jako 2.5
+            3. Wywołaj obie funkcje i pokaż obiekt
+               laptopa w konsoli
+        */
+
+      function createComputer(cpu, gpu, ram, disk) {
+        return {
+          cpu: cpu,
+          gpu: gpu,
+          ram: ram,
+          disk: disk,
+        };
+      }
+
+      let computer = createComputer("amd", "nvidia", "32gb", "1tb");
+      console.log(computer);
+
+      function createLaptop(obj) {
+        return {
+          ...obj,
+          type: "laptop",
+          weight: 2.5,
+        };
+      }
+
+      let laptop = createLaptop(computer);
+      console.log(laptop);
+
+      //   function foo(...params) {
+      //     console.log(params);
+      //   }
+      //   foo(1, 2, 3, 4, 5, 6, 7, 8);
+
+      function sumAll(...numbers) {
+        return numbers.reduce((acc, current) => acc + current, 0);
+      }
+
+      console.log(sumAll(1, 2, 3, 4, 5)); // 15
+      console.log(sumAll(10, 20)); // 30
+    </script>
+  </body>
+</html>
