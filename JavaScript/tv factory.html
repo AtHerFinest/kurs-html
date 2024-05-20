@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const tvFactory = {
+        name: "Factory",
+        city: "Krk",
+        employees: [],
+        brand: "Sharp",
+        addEmployee: function (name, surname) {
+          const obj = {
+            name: name,
+            surname: surname,
+            email: `${name.toLowerCase()}.${surname.toLowerCase()}@example.com`,
+          };
+
+          this.employees[this.employees.length] = obj;
+        },
+        showEmployees: function () {
+          console.log(this.name, "employees:");
+
+          for (let i = 0; i < this.employees.length; i++) {
+            const e = this.employees[i];
+            console.log(e.name, e.surname, e.email);
+          }
+        },
+        makeTv: function (model, color) {
+          return {
+            id: `${this.brand}-${model}-${color}-TV`,
+            brand: this.brand,
+            model: model,
+            color: color,
+          };
+        },
+      };
+
+      tvFactory.addEmployee("Ola", "Kowalska");
+      tvFactory.addEmployee("Adam", "Adamski");
+      console.log(tvFactory.employees);
+
+      tvFactory.showEmployees();
+
+      let tv1 = tvFactory.makeTv("X1", "silver");
+      console.log(tv1);
+      let tv2 = tvFactory.makeTv("X1", "black");
+      console.log(tv2);
+
+      tvFactory.name = "Factory Ltd.";
+      tvFactory["name"] = "TV Factory Ltd.";
+
+      console.log(tvFactory);
+
+      const factoryName = "name";
+      tvFactory[factoryName] = "Sharp TV Factory Ltd";
+      console.log(tvFactory);
+    </script>
+  </body>
+</html>
