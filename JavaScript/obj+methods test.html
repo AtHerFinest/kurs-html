@@ -35,6 +35,65 @@
                Pokaż ilość studentów, zresetuj ich i ponownie
                pokaż w konsoli ich ilość. 
         */
+
+
+        const objSchool = {
+         name: "Maczek",
+         city: "Koronowo",
+         students: [],
+
+         addStudent: function (name, surname){
+         const objStudent = {
+            name: name,
+            surname: surname
+         };
+         this.students[this.students.length] = objStudent;
+      },
+
+      showStudents: function(){
+         for(i=0; i < this.students.length; i++){
+            const student = this.students[i];
+            console.log(student.name, student.surname);
+         }
+         if(this.students.length == 0){
+            console.log("Szkoła nie posiada studentów")
+         }
+      },
+
+      showStudentsByName: function(name){
+         for(i=0; i < this.students.length; i++){
+            const student = this.students[i];
+            if(student.name == name){
+               console.log(student.name, student.surname)
+            };
+
+      }
+
+   },
+
+   getNumStudents: function() {
+      return this.students.length;
+   },
+
+   resetStudents: function(){
+      this.students = [];
+   }
+}
+
+   objSchool.addStudent("Kamil", "pi");
+   objSchool.addStudent("Kamil", "ad");
+   objSchool.addStudent("Ola", "ad");
+   objSchool.showStudents();
+   objSchool.showStudentsByName("Kamil");
+   console.log(objSchool.getNumStudents());
+   objSchool.resetStudents();
+   console.log(objSchool.getNumStudents());
+  
+   
+   
+   
+   
+        
     </script>
   </body>
 </html>
