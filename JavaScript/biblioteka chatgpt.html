@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      /* Zadanie 1: Biblioteka
+        1. Napisz obiekt opisujący bibliotekę z jej nazwą, adresem oraz pustą tablicą książek.
+        2. Dodaj metodę addBook(title, author) do dodania książki na podstawie tytułu i autora.
+        Metoda ta doda obiekt książki do tablicy książek.
+        3. Napisz metodę showBooks(), która pokaże w konsoli wszystkie książki.
+        Jeżeli liczba książek wynosi 0, pokaż informację, że biblioteka nie ma książek.
+        4. Dodaj metodę showBooksByAuthor(author),
+        która przyjmie parametr author i pokaże książki tylko określonego autora w konsoli.
+        5. Napisz metodę getNumBooks(), która zwróci liczbę książek.
+        6. Dodaj metodę resetBooks(), która skasuje wszystkie książki
+        (przypisze pustą tablicę do tablicy książek).
+        7. Dodaj kilka książek (dwie z tym samym autorem) i pokaż wszystkie w konsoli.
+        8. Następnie pokaż książki tego samego autora. Pokaż liczbę książek, zresetuj je i
+        ponownie pokaż w konsoli ich liczbę.
+      */
+
+      const libraryObj = {
+        name: "Biblioteka",
+        address: "Koronowo",
+        books: [],
+
+        addBook: function (title, author) {
+          const objBook = {
+            title: title,
+            author: author,
+          };
+          this.books[this.books.length] = objBook;
+        },
+      };
+    </script>
+  </body>
+</html>
