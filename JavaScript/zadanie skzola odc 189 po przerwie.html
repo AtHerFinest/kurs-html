@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const school = {
+            name: "Szkoła Podstawowa nr. 1",
+            city: "Koronowo",
+            students: [],
+
+            addStudent: function (name, surname){
+                const student = {
+                    name: name,
+                    surname: surname
+                };
+                
+                const index = this.students.length;
+                this.students[index] = student;
+            },
+
+            showStudents: function (){
+                if(this.students.length == 0){
+                    console.log("brak studentów");
+                    return;
+                }
+                for(let i = 0; i < this.students.length; i++){
+                    let s = this.students[i];
+                    console.log(s.name, s.surname);
+                }
+                
+            }
+        };
+        
+
+
+
+
+    </script>
+</body>
+</html>
